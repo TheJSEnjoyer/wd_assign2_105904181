@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Reservation.css"> 
+<script src="reservation.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Let's find you a seat, my Friend</title>
+</head>
+
+<body>
+
+<header><h1>It's time to reserve seat(s)!</h1></header>
+
+<main>
+<form method="post" id="regform" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+
+    <fieldset>
+        <legend><h2>The Customer's Details:</h2></legend>
+
+        <div class="textinput">
+            <label for="sid">First Name</label>
+            <input id="sid" type="text" name="sid">
+        </div>
+
+        <div class="textinput">
+            <label for="Lname">Last Name</label>
+            <input id="Lname" type="text" name="Lname">
+        </div>
+
+        <div class="textinput">
+            <label for="email">Email</label>
+            <input id="email" type="text" name="email">
+        </div>
+
+        <div class="textinput">
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="text" name="phone">
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend><h2>Restaurant Reservation Details:</h2></legend>
+
+        <h2>1. Which Restaurant Have you chosen?</h2>
+        <select name="restaurant" id="restaurant" class="restaurant-select" required>
+            <option value="" selected>Choose your restaurant</option>
+            <option value="Osaka's Sushi">Osaka's Sushi</option>
+            <option value="L'Olivo">L'Olivo</option>
+            <option value="Saigon's Kitchen">Saigon's Kitchen</option>
+            <option value="Route 66 Diner">Route 66 Diner</option>
+            <option value="Mokhwa Dining">Mokhwa Dining</option>
+            <option value="Al Noor Spice House">Al Noor Spice House</option>
+        </select>
+
+        <div class="textinput">
+            <h2>2. Reservation Date & Time</h2>
+            <input type="datetime-local" id="datetime" name="datetime" required>
+        </div>
+
+        <p><strong>Note:</strong> Reservations Must be made between 9am to 10pm</p>
+
+        <h2>3. How Many People will the reservation have?</h2>
+        <select name="Customer" id="Customer" class="customer-select" required>
+            <option value="" selected>Customer Amount</option>
+            <option value="1Cus">only 1 customer</option>
+            <option value="2Cus">2 Customers</option>
+            <option value="3Cus">3 Customers</option>
+            <option value="4Cus">4 Customers</option>
+            <option value="5(+)Cus">5 or more Customers</option>
+        </select>
+
+        <h2>3.5. Do you have any special requests? (Optional)</h2>
+        <label for="special-requests">Special Requests:</label>
+		<br>
+        <textarea id="special-requests" name="specialRequests" rows="4" cols="50" placeholder="If you have any special requests, please write down here..."></textarea>
+
+    </fieldset>
+
+    <fieldset>
+        <legend><h2>Payment Details:</h2></legend>
+
+        <h2>1. Choose Payment Method:</h2>
+        <div class="payment-options">
+            <input type="radio" id="voucher" name="paymentMethod" value="voucher">
+            <label for="voucher">Voucher</label><br>
+
+            <input type="radio" id="online" name="paymentMethod" value="online">
+            <label for="online">Online Payment (Credit Card)</label>
+        </div>
+
+        <div id="voucher-field" style="display:none;">
+            <label for="voucherCode">Voucher Code (12 digits):</label>
+            <input type="text" id="voucherCode" name="voucherCode">
+        </div>
+
+        <div id="card-field" style="display:none;">
+            <label for="cardNumber">Credit Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="Visa/MC 16 digits, Amex 15 digits">
+        </div>
+
+        <h2>2. What's your billing address?</h2>
+        <div class="textinput">
+            <label for="billingEmail">Billing Email</label>
+            <input id="billingEmail" type="text" name="billingEmail">
+        </div>
+
+        <div class="checkbox-row">
+            <input type="checkbox" id="sameEmail">
+            <label for="sameEmail">Same as email address</label>
+        </div>
+
+        <div class="deposit-section">
+            <p><strong>Deposit Amount:</strong> $<span id="depositAmount">0</span></p>
+        </div>
+
+    </fieldset>
+
+    <p>Finished filling out your details? click this button here!</p>
+    <div class="buttoninput">
+        <input type="submit" value="Submit" class="submit-btn">
+    </div>
+
+</form>
+</main>
+
+<footer>
+    <h3>Click here to go back to the menu <a href="index.html">Main Menu</a></h3>
+    <p>Kevin's Own creation, 2026</p>
+    <p>Feel free to contact me for help: 105904181@student.swin.edu.au</p>
+</footer>
+
+</body>
+</html>

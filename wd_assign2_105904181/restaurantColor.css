@@ -1,0 +1,174 @@
+body {
+  background-color: #1a1a2e; /* darker but soft background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 15px;
+}
+
+/* For Tablet */
+@media screen and (max-width: 1023px) {
+  nav ul {
+    display: flex;   /* Using flexbox for layout */
+    flex-direction: column; /* placing navigation items vertically */
+    align-items: center;  /* Center all features horizontally */
+  }
+
+  section {
+    display: block;  /* Stack sections vertically */
+  }
+}
+
+/* For Mobile */
+@media screen and (max-width: 767px) {
+  nav ul { 
+    flex-direction: column;  /* placing navigation items on columns */
+  }
+
+  body {
+    padding: 10px; /* Reduce space for mobile */
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* For Desktop */
+@media screen and (min-width: 1024px) {
+  nav ul {
+    display: flex;                /* Using flexbox for layout */
+    justify-content: space-around;  /* spacing between menu items */
+  }
+
+  section {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+/* header size color and centerising */
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+h2, h3, h4 {
+  color: #f5f5f5;
+  margin: 10px 0;
+}
+
+ol {
+  color: #f0f0f0;
+}
+
+/* font's customisation */
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: #ddd;
+}
+
+/* makes the main a grid layout with columns of 75% + 20% and 5% gap */
+main {
+  display: grid;
+  grid-template-columns: 75% 20%;
+  column-gap: 5%;
+  margin-top: 20px;
+}
+
+/* adds 20px space top & bottom with none for left and right */
+nav {
+  margin: 20px 0px;
+}
+
+/* colors and styles of all borders */
+header, nav, article, section, aside, footer {
+  border-style: double;
+  border-color: #6e6e6e; /* softer border color */
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #2b2b44; /* subtle card look */
+}
+
+img {
+  width: 80%;     /* makes image responsive */
+  height: auto;    /* keeps correct proportions */
+  display: block;  
+  margin-left: auto; /* center the image */
+  margin-right: auto;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #2b2b44;
+  padding: 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+}
+
+/* customisation for the navigation tabs */
+a {
+  display: block;
+  width: 9em;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #34515e;
+  border-right: 1px solid #ffffff;
+  text-align: center;
+  padding: 0.5em 0; 
+  opacity: 0.8;              
+  transition: 0.5s ease;     
+}
+
+/* Stretching navigation bar animation */
+a:hover { 
+  opacity: 1;                
+  background-color: #208C8C;
+  width: 15em;               
+  letter-spacing: 1px;    
+}
+
+header h1 {
+  text-align:center;
+}
+
+aside {
+  width: 25%;
+  display: inline-block;  /* aligns with main */
+  vertical-align: top;
+  border: 2px double #6e6e6e;
+  padding: 10px;
+  background-color: #2b2b44;
+  border-radius: 8px;
+  /* float: right; removed */
+}
+
+main {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  background-color: #2a2a3f;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+footer {
+  width: 100%;
+  margin-right: auto;
+}

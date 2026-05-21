@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bill Calculation</title>
+<link rel="stylesheet" href="Bill.css">
+<script src="bill.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Let's see how much you will spend</h1>
+</header>
+
+<main>
+    <form id="regform">
+
+        <fieldset>
+            <legend><h2>Bill Calculation:</h2></legend>
+
+            <!-- Restaurant Selection -->
+            <h2>1. Which Restaurant Have you chosen?</h2>
+            <label for="restaurant">Select a Restaurant to your picking!</label>
+            <select name="restaurant" id="restaurant" class="restaurant-select">
+                <option value="" selected>Choose your restaurant</option>
+                <option value="Osaka's Sushi">Osaka's Sushi</option>
+                <option value="L'Olivo">L'Olivo</option>
+                <option value="Saigon's Kitchen">Saigon's Kitchen</option>
+                <option value="Route 66 Diner">Route 66 Diner</option>
+                <option value="Mokhwa Dining">Mokhwa Dining</option>
+                <option value="Al Noor Spice House">Al Noor Spice House</option>
+            </select>
+
+            <div class="deposit-section">
+                <p><strong>Deposit Reserve Amount:</strong> $<span id="depositAmount">0</span></p>
+            </div>
+
+            <!-- Number of Customers -->
+            <h2>2. How Many Customers?</h2>
+            <select name="Customer" id="numPeople" class="customer-select">
+                <option value="" selected>Customer Amount</option>
+                <option value="1Cus">only 1 customer</option>
+                <option value="2Cus">2 Customers</option>
+                <option value="3Cus">3 Customers</option>
+                <option value="4Cus">4 Customers</option>
+                <option value="5(+)Cus">5 or more Customers</option>
+            </select>
+
+            <!-- Optional Dishes -->
+            <fieldset>
+                <legend><h2>3. Optional Dishes:</h2></legend>
+                <input type="checkbox" name="dish" value="0" id="dish1" class="optionalDish">
+                <label for="dish1" id="dish1Label">Dish 1 ($0)</label><br>
+
+                <input type="checkbox" name="dish" value="0" id="dish2" class="optionalDish">
+                <label for="dish2" id="dish2Label">Dish 2 ($0)</label><br>
+
+                <input type="checkbox" name="dish" value="0" id="dish3" class="optionalDish">
+                <label for="dish3" id="dish3Label">Dish 3 ($0)</label><br>
+
+                <input type="checkbox" name="dish" value="0" id="dish4" class="optionalDish">
+                <label for="dish4" id="dish4Label">Dish 4 ($0)</label><br>
+
+                <input type="checkbox" name="dish" value="0" id="dish5" class="optionalDish">
+                <label for="dish5" id="dish5Label">Dish 5 ($0)</label><br>
+            </fieldset>
+
+            <!-- Calculate Total Button -->
+            <button type="button" id="calculateTotalBtn" class="calculateTotalBtn">Calculate the Total Amount</button>
+
+        </fieldset>
+
+    </form>
+</main>
+
+<aside>
+    <p><strong>Total Bill: $<span id="totalBill">0.00</span></strong></p>
+</aside>
+
+<footer>
+    <h3>Click here to go back to the menu <a href="index.html">Main Menu</a></h3>
+    <p>Kevin's Own creation, 2026</p>
+    <p>Feel free to contact me for help: 105904181@student.swin.edu.au</p>
+</footer>
+
+</body>
+</html>

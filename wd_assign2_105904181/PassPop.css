@@ -1,0 +1,53 @@
+.button {
+	border           				:1px solid rgb(0, 0, 0);
+	border-radius    			:15px;            /* smoothens the curve of button */
+	background-color 		:rgb(167, 0, 0);
+	padding          				:0.25em; 				/* Creates spacing around the text */
+}
+
+/* Stretching navigation bar animation */
+a:hover { 
+  opacity: 1;                
+  background-color: #ff9100;
+    width: 15em;               
+  letter-spacing: 2px;    
+}
+
+
+.window {
+    display: none;           /* initially hidden */
+    position: fixed;         /* stay in viewport */
+    z-index: 9999;           /* HIGHER than anything else on page */
+    top: 50%;
+    left: 50%;
+    margin-top: -5em;
+    margin-left: -11em;
+    width: 22em;
+    height: 10em;
+    background-color: rgb(96, 75, 105);
+    border: 5px solid rgb(0,0,0);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.window button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* set up a transparent pane on the screen, preventing the user from clicking on any elements at layer 0 on the screen */
+#scrnOverlay {
+    display: none;             /* keep hidden initially */
+    position: fixed;           /* Block out the whole screen */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998;             /* just below window */
+    background-color: rgb(167, 167, 167);
+    opacity: 0.5;
+}

@@ -1,0 +1,227 @@
+body {
+  background-color: #1f2b3a; /* Dark blue/teal background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+/* For Tablet */
+@media screen and (max-width: 1023px) {
+  nav ul {
+    display: flex;   /* Using flexbox for layout */
+    flex-direction: column; /* placing navigation items vertically */
+    align-items: center;  /* Center all features horizontally */
+  }
+
+  section {
+    display: block;  /* Stack sections vertically */
+  }
+}
+
+/* For Mobile */
+@media screen and (max-width: 767px) {
+  nav ul { 
+    flex-direction: column;  /* placing navigation items on columns */
+  }
+
+  body {
+    padding: 10px; /* Reduce space for mobile */
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* For Desktop */
+@media screen and (min-width: 1024px) {
+  nav ul {
+    display: flex;                /* Using flexbox for layout */
+    justify-content: space-around;  /* spacing between menu items */
+  }
+
+  section {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+/* Header styling */
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 20px 0;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+h2, h3, h4 {
+  color: #ffffff;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Form and text input styling */
+form {
+  color: #ffffff;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #bbbbbb;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 5px 0 12px 0;
+  display: block;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Paragraphs and ordered lists */
+p, ol {
+  font-size: 18px;
+  color: #f1f1f1;
+}
+
+/* Main layout */
+main {
+  display: grid;
+  grid-template-columns: 70% 25%;
+  column-gap: 5%;
+  padding: 15px;
+}
+
+/* Navigation menu */
+nav {
+  margin: 20px 0px;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+}
+
+a {
+  display: block;
+  width: 10em;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #3b6978;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 5px;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 1;
+  background-color: #6998ab;
+  transform: scale(1.05);
+}
+
+/* Images */
+img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Footer styling */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2a3d4f;
+  padding: 15px 0;
+  border-radius: 8px;
+}
+
+/* Aside styling */
+aside {
+  border: 2px double #999;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #2e3f50;
+}
+
+/* Buttons */
+.submit, .submit-btn, .calculateTotalBtn {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn, .calculateTotalBtn {
+  background: linear-gradient(135deg, #6db3f2, #1e69de);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.submit-btn:hover, .calculateTotalBtn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.submit-btn:active, .calculateTotalBtn:active {
+  transform: scale(0.97);
+}
+
+/* Radio buttons */
+.radioinput {
+  display: -moz-box;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.radioinput input[type="radio"] {
+  transform: scale(1.2);
+  accent-color: #ff7043;
+  cursor: pointer;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #43a047; /* green tick */
+  cursor: pointer;
+}
+
+/* Fieldset styling */
+fieldset {
+  border: 2px double #999;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: rgba(255,255,255,0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}

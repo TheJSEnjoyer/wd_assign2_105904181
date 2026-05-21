@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Recommendation.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="recommendation.js" defer></script>
+<title>Let's find you the perfect match</title>
+</head>
+
+<body>
+
+<header>
+<h1>Let's find you the perfect Match</h1>
+</header>
+
+<main>
+
+<article>
+<h2>Recommendation Survey</h2>
+<hr>
+
+<h3>Number 1. What is your Dietary preference?</h3>
+
+<div class="radioinput">
+<input type="radio" id="anything" name="diet" value="Anything">
+<label for="anything">Anything</label><br>
+
+<input type="radio" id="halal" name="diet" value="Halal">
+<label for="halal">Halal</label><br>
+
+<input type="radio" id="vegan" name="diet" value="Vegan">
+<label for="vegan">Vegan</label><br>
+
+<input type="radio" id="pescatarian" name="diet" value="Pescatarian">
+<label for="pescatarian">Pescatarian</label><br>
+
+<input type="radio" id="glutenfree" name="diet" value="Gluten Free">
+<label for="glutenfree">Gluten Free</label><br>
+</div>
+<hr>
+
+<h3>Number 2. How Much budget are you seeking to spend for each person?</h3>
+
+<div class="radioinput">
+<input type="radio" id="budget1" name="Budget" value="Budget">
+<label for="budget1">$5 - $20 (Budget)</label><br>
+
+<input type="radio" id="budget2" name="Budget" value="Mid-range">
+<label for="budget2">$21 - $40 (Mid-range)</label><br>
+
+<input type="radio" id="budget3" name="Budget" value="Premium">
+<label for="budget3">$41 - $60 (Premium)</label><br>
+</div>
+<hr>
+
+<h3>Number 3. And to end it off, what is your reason for eating out?</h3>
+
+<div class="radioinput">
+<input type="radio" id="reason-family" name="reason" value="Family">
+<label for="reason-family">Family</label><br>
+
+<input type="radio" id="reason-couple" name="reason" value="Couple">
+<label for="reason-couple">Couple</label><br>
+
+<input type="radio" id="reason-business" name="reason" value="Business">
+<label for="reason-business">Business</label><br>
+
+<input type="radio" id="reason-friends" name="reason" value="Friends">
+<label for="reason-friends">Friends</label><br>
+</div>
+<hr>
+
+<h3>Done with your survey questions? click on this button to get your recommendation</h3>
+
+<!-- custom recommendation button -->
+<button type="button" class="recommend-btn" onclick="recommendRestaurant()"> 
+    Get Recommendation
+</button>
+
+<div id="recommendation"></div>
+
+</article>
+
+<aside>
+<h2>What's this?</h2>
+<p>In this page, the users will do a small survey with 3 preferences that will give them a recommendation based on the customer's preferences to make sure they eat as the way they want while making sure they are enjoying the meal!</p>
+<hr>
+<h2>How does this part work?</h2>
+<p>The survey comes with 3 options: dietary preference, budget range, and the reason for dining. After the customer has answered, the website will look for the recommendation based on the choices the customer gave and provide the best match for them.</p>
+</aside>
+
+</main>
+
+<footer>
+<h3>Click here to go back to the menu <a href="index.html">Main Menu</a></h3>
+<p>Kevin's Own creation, 2026</p>
+<p>Feel free to contact me for help: 105904181@student.swin.edu.au</p>
+</footer>
+
+</body>
+</html>

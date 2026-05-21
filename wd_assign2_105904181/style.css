@@ -1,0 +1,167 @@
+body {
+  background-color:#5a6d56
+}
+
+
+/* For Tablet */
+@media screen and (max-width: 1023px) {
+  nav ul {
+    display: flex;   /* Using flexbox for layout */
+    flex-direction: column; /* placing navigation items vertically */
+    align-items: center;  /* Center all features horizontally */
+  }
+
+  section {
+    display: block;  /* Stack sections vertically */
+  }
+}
+
+
+/* For Mobile */
+@media screen and (max-width: 767px) {
+  nav ul { 
+    flex-direction: column;  /* placing navigation items on columns */
+  }
+
+  body {
+    padding: 10px; /* Reduce space for mobile */
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+
+
+/* For Desktop */
+@media screen and (min-width: 1024px) {
+  nav ul {
+    display: flex;                /* Using flexbox for layout */
+    justify-content: space-around;  /* spacing between menu items */
+  }
+
+
+  section {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+
+h2 {
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+
+h3 {
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+h4 {
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+
+ol {
+  color: rgb(255, 255, 255);
+}
+
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+main {
+display: grid;
+grid-template-columns: 75% 20%;
+column-gap: 5%;
+}
+
+nav {
+margin:20px 0px;
+}
+
+nav, article, section, aside, footer {
+border-style:double;
+border-color:rgb(255, 255, 255);
+}
+
+img {
+  width: 60%;     /* makes image responsive */
+  height: auto;    /* keeps correct proportions */
+  display: block;  
+  margin-left: auto; /* keeps the picture to center and not sticking to side */
+  margin-right: auto;
+
+}
+
+
+footer {
+margin-top: 20px;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+}
+
+a {
+  display: block;
+  width: 9em;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #024959;
+  border-right: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  padding: 0.5em 0; 
+  opacity: 0.6;              
+  transition: 0.5s ease;     
+}
+
+a:hover {
+  opacity: 1;                
+  background-color: #208C8C;
+}
+
+header h1 {
+text-align:center;
+}
+aside {
+  float: right;
+}
+main {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  border: none
+}
+
+aside {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px double rgb(255, 255, 255)
+}
+
+footer {
+  width: auto;
+  margin-right: auto;
+}

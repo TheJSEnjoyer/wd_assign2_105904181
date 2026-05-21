@@ -1,0 +1,231 @@
+body {
+  background-color: rgb(78, 39, 39); /* Dark maroon background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+/* For Tablet */
+@media screen and (max-width: 1023px) {
+  nav ul {
+    display: flex;   /* Using flexbox for layout */
+    flex-direction: column; /* placing navigation items vertically */
+    align-items: center;  /* Center all features horizontally */
+  }
+
+  section {
+    display: block;  /* Stack sections vertically */
+  }
+}
+
+/* For Mobile */
+@media screen and (max-width: 767px) {
+  nav ul { 
+    flex-direction: column;  /* placing navigation items on columns */
+  }
+
+  body {
+    padding: 10px; /* Reduce space for mobile */
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* For Desktop */
+@media screen and (min-width: 1024px) {
+  nav ul {
+    display: flex;                /* Using flexbox for layout */
+    justify-content: space-around;  /* spacing between menu items */
+  }
+
+  section {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+/* Header styling */
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 20px 0;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+h2, h3, h4 {
+  color: #ffffff;
+  text-align: left;
+  margin-top: 15px;
+}
+
+label {              /* sizes and colors the default text */
+  color: white;
+  font-size: 18px;
+}
+
+p, ol {
+  font-size: 18px;
+  color: #f1f1f1;
+}
+
+/* Main and Aside layout */
+main {
+  display: flex;             /* Flex container for main content */
+  align-items: flex-start;
+  gap: 10px;
+  padding: 15px;
+}
+/* The main tab page */
+article {
+  flex: 1;                   
+  background-color: rgba(255, 44, 44, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
+}
+/* The aside tab color */
+aside {
+  width: 30%;
+  padding: 15px;
+  border: 2px double gray;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: bold;
+}
+
+/* Navigation menu */
+nav {
+  margin: 20px 0;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+}
+
+a {
+  display: block;
+  width: 9em;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #d1863f;
+  border-right: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  padding: 0.5em 0; 
+  opacity: 0.7;              
+  transition: all 0.3s ease;     
+}
+
+a:hover { 
+  opacity: 1;                
+  background-color: #fc8a2e;
+  width: 15em;               
+  letter-spacing: 2px;    
+}
+
+/* Recommendation box */
+#recommendation {
+    margin-top: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #ffffff, #f2f2f2);
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    max-width: 700px;
+    color: black; /* base text color */
+}
+
+#recommendation h2,
+#recommendation p {
+    color: black !important;
+    font-weight: bold;
+}
+
+#recommendation img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Buttons */
+.submit, .submit-btn, .recommend-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn, .recommend-btn {
+    background: linear-gradient(135deg, #7192ff, #0882d4);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.submit-btn:hover, .recommend-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.submit-btn:active, .recommend-btn:active {
+    transform: scale(0.97);
+}
+
+/* Radio buttons */
+.radioinput {
+  margin-top: 10px;
+  color: white;
+  display: -moz-box;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.radioinput input[type="radio"] {
+  transform: scale(1.2);
+  accent-color: #ff7043;
+  cursor: pointer;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #43a047; /* green tick */
+  cursor: pointer;
+}
+
+/* Images */
+img {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 15px 0;
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
